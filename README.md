@@ -1,12 +1,15 @@
-# HTML and CSS (with SASS) starter template
+# HTML (with Pug) and CSS (with SASS) starter template
 
 ## How to get started
 
-- npm install - to install all the dependencies
-- npm run sass - this command will watch your .scss files and recompile your CSS on save
-- edit .scss files from sass folder
-- remove style tag from dist/index.html
+- `npm install` - to install all the dependencies
+- `npm start` - this command will start a dev server, watch your `.scss` and `.pug` files
+- edit `.scss` files from `scss` folder
+- edit `.pug` files from `pug` folder
 
-## Recomandations
+## All the features
 
-- use VSCode "Live Server" extension for live reloading
+- **SASS** - CSS with superpowers
+- **Pug** - high performance template engine heavily influenced by Haml
+- **Live reload** - live-server npm package
+- **PostCSS** - A tool for transforming CSS with JavaScript

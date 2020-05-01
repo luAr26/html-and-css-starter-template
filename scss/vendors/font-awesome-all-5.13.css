@@ -1,33 +1,7 @@
-/*
-COLORS
-*/
-/* Websites for colors:
-  - coolors.co
-  - mycolor.space
-*/
-/*
-GRID
-*/
-/*
-  0 - 600 - phone <default>
-  600 - 900 - tablet in portrait mode
-  900 - 1200 - tablet in landscape
-  1200 - 1800 - desktop
-  1800+ - big desktop
-
-$breakpoint argument choices:
-- tab-port
-- tab-land
-- desktop
-- big-desktop
-
-1em = 16px
-*/
 /*!
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 .fa,
 .fas,
 .far,
@@ -91,9 +65,8 @@ $breakpoint argument choices:
   list-style-type: none;
   margin-left: 2.5em;
   padding-left: 0; }
-
-.fa-ul > li {
-  position: relative; }
+  .fa-ul > li {
+    position: relative; }
 
 .fa-li {
   left: -2em;
@@ -129,57 +102,57 @@ $breakpoint argument choices:
 
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
-  animation: fa-spin 2s infinite linear; }
+          animation: fa-spin 2s infinite linear; }
 
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
-  animation: fa-spin 1s infinite steps(8); }
+          animation: fa-spin 1s infinite steps(8); }
 
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+            transform: rotate(0deg); }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+            transform: rotate(360deg); } }
 
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+            transform: rotate(0deg); }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+            transform: rotate(360deg); } }
 
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
+          transform: rotate(90deg); }
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg); }
+          transform: rotate(180deg); }
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
-  transform: rotate(270deg); }
+          transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
-  transform: scale(-1, 1); }
+          transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
-  transform: scale(1, -1); }
+          transform: scale(1, -1); }
 
 .fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(-1, -1);
-  transform: scale(-1, -1); }
+          transform: scale(-1, -1); }
 
 :root .fa-rotate-90,
 :root .fa-rotate-180,
@@ -188,7 +161,7 @@ $breakpoint argument choices:
 :root .fa-flip-vertical,
 :root .fa-flip-both {
   -webkit-filter: none;
-  filter: none; }
+          filter: none; }
 
 .fa-stack {
   display: inline-block;
@@ -4547,7 +4520,6 @@ readers do not read off random characters that represent icons */
   overflow: visible;
   position: static;
   width: auto; }
-
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
@@ -4559,7 +4531,6 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400; }
-
 @font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
@@ -4571,7 +4542,6 @@ readers do not read off random characters that represent icons */
 .far {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
-
 @font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
@@ -4584,78 +4554,3 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 50%; }
-  @media only screen and (min-width: 56.25em) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (min-width: 75em) {
-    html {
-      font-size: 62.5%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
-
-body {
-  box-sizing: border-box; }
-
-::selection {
-  background-color: #0facf3;
-  color: #fff; }
-
-/*
-FONTS
-*/
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #3c4859;
-  font-size: 1.6em; }
-
-/* Utilities: test comment */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.row {
-  max-width: 71.25em;
-  margin: 0 auto; }
-  .row::after {
-    content: '';
-    display: table;
-    clear: both; }
-  .row:not(:last-child) {
-    margin-bottom: 5em; }
-  .row [class^="col-"] {
-    width: 100%;
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 5em; }
-  @media only screen and (min-width: 56.25em) {
-    .row .col-1-of-2 {
-      width: calc((100% - 5em) / 2); } }
-  @media only screen and (min-width: 56.25em) {
-    .row .col-1-of-3 {
-      width: calc((100% - 2 *5em) / 3); } }
-  @media only screen and (min-width: 56.25em) {
-    .row .col-1-of-4 {
-      width: calc((100% - 3 *5em) / 4); } }
-  @media only screen and (min-width: 56.25em) {
-    .row .col-2-of-3 {
-      width: calc( (2 * (100% - 2 *5em) / 3) + 5em); } }
-  @media only screen and (min-width: 56.25em) {
-    .row .col-2-of-4 {
-      width: calc( (2 * (100% - 3 *5em) / 4) + 5em); } }
-  @media only screen and (min-width: 56.25em) {
-    .row .col-3-of-4 {
-      width: calc( (3 * (100% - 3 *5em) / 4) + 2 * 5em); } }
